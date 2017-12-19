@@ -11,24 +11,115 @@ html {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-size: 100%;
+  font-family: Ubuntu, bold;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  line-height: 1.5;
+  margin: 0;
+}
+
+header {
+  background-color: #18294f;
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: .5em .75em;
+  font-family: Ubuntu, regular;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+li {
+  margin-bottom: .9rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6c8fe0;
+}
+
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
+}
+
 @media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  body {
+    vertical-align: middle;
+  }
+
+  ul {
+    overflow: hidden;
+  }
+
+  li {
+    width: 50%;
+    float: left;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  ul {
+    overflow: hidden;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1 {
+    float: left;
+  }
+
+  li {
+    float: right;
+    width: 25%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
 
 }
